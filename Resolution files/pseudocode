@@ -1,0 +1,844 @@
+if (A==giallo && M==blu)
+	esegui A
+if (B==giallo && I==blu)
+	esegui B
+if (C==giallo && E==blu)
+	esegui C
+if (D==giallo && Q==blu)
+	esegui D
+if (E==giallo && C==blu)
+	esegui E
+if (F==giallo && L==blu)
+	esegui F
+if (G==giallo && U==blu)
+	esegui G
+if (H==giallo && R==blu)
+	esegui H
+if (I==giallo && B==blu)
+	esegui I
+if (J==giallo && P==blu)
+	esegui J
+if (K==giallo && V==blu)
+	esegui K
+if (L==giallo && F==blu)
+	esegui L
+if (M==giallo && A==blu)
+	esegui M
+if (N==giallo && T==blu)
+	esegui N
+if (O==giallo && Y==blu)
+	esegui O
+if (P==giallo && J==blu)
+	esegui P
+if (Q==giallo && D==blu)
+	esegui Q
+if (R==giallo && H==blu)
+	esegui R
+if (S==giallo && Z==blu)
+	esegui S
+if (T==giallo && N==blu)
+	esegui T
+if (U==giallo && G==blu)
+	sei a posto
+if (V==giallo && K==blu)
+	esegui V
+if (Y==giallo && O==blu)
+	esegui Y
+if (Z==giallo && S==blu)
+	esegui Z
+//sistemare lo spigolo giallo-arancione
+
+if (A==giallo && M==arancione)
+	esegui A
+if (B==giallo && I==arancione)
+	esegui B
+if (C==giallo && E==arancione)
+	esegui C
+if (D==giallo && Q==arancione)
+	esegui D
+if (E==giallo && C==arancione)
+	esegui E
+if (F==giallo && L==arancione)
+	esegui F
+if (H==giallo && R==arancione)
+	esegui H
+if (I==giallo && B==arancione)
+	esegui I
+if (J==giallo && P==arancione)
+	esegui J
+if (K==giallo && V==arancione)
+	esegui K
+if (L==giallo && F==arancione)
+	esegui L
+if (M==giallo && A==arancione)
+	esegui M
+if (N==giallo && T==arancione)
+	esegui N
+if (O==giallo && Y==arancione)
+	esegui O
+if (P==giallo && J==arancione)
+	esegui P
+if (Q==giallo && D==arancione)
+	esegui Q
+if (R==giallo && H==arancione)
+	esegui R
+if (S==giallo && Z==arancione)
+	esegui S
+if (T==giallo && N==arancione)
+	esegui T
+if (V==giallo && K==arancione)
+	sei a posto
+if (Y==giallo && O==arancione)
+	esegui Y
+if (Z==giallo && S==arancione)
+	esegui Z
+
+//sistemare lo spigolo giallo-verde
+
+if (A==giallo && M==verde)
+	esegui A
+if (B==giallo && I==verde)
+	esegui B
+if (C==giallo && E==verde)
+	esegui C
+if (D==giallo && Q==verde)
+	esegui D
+if (E==giallo && C==verde)
+	esegui E
+if (F==giallo && L==verde)
+	esegui F
+if (H==giallo && R==verde)
+	esegui H
+if (I==giallo && B== verde)
+	esegui I
+if (J==giallo && P==verde)
+	esegui J
+if (L==giallo && F==verde)
+	esegui L
+if (M==giallo && A==verde)
+	esegui M
+if (N==giallo && T==verde)
+	esegui N
+if (O==giallo && Y==verde)
+	esegui O
+if (P==giallo && J==verde)
+	esegui P
+if (Q==giallo && D==verde)
+	esegui Q
+if (R==giallo && H==verde)
+	esegui R
+if (S==giallo && Z==verde)
+	esegui S
+if (T==giallo && N==verde)
+	esegui T
+if (Y==giallo && O==verde)
+	sei a posto
+if (Z==giallo && S==verde)
+	esegui Z
+
+//sistemare spigolo giallo-rosso
+
+if (A==giallo && M==rosso)
+	esegui A
+if (B==giallo && I==rosso)
+	esegui B
+if (C==giallo && E==rosso)
+	esegui C
+if (D==giallo && Q==rosso)
+	esegui D
+if (E==giallo && C==rosso)
+	esegui E
+if (F==giallo && L==rosso)
+	esegui F
+if (H==giallo && R==rosso)
+	esegui H
+if (I==giallo && B== rosso)
+	esegui I
+if (J==giallo && P==rosso)
+	esegui J
+if (L==giallo && F==rosso)
+	esegui L
+if (M==giallo && A==rosso)
+	esegui M
+if (N==giallo && T==rosso)
+	esegui N
+if (P==giallo && J==rosso)
+	esegui P
+if (Q==giallo && D==rosso)
+	esegui Q
+if (R==giallo && H==rosso)
+	esegui R
+if (S==giallo && Z==rosso)
+	esegui S
+if (T==giallo && N==rosso)
+	esegui T
+if (Z==giallo && S==rosso)
+	sei a posto
+
+//sistemare lo spigolo blu-arancione
+
+if ( (A==blu && M==arancione) || (A==arancione && M==blu) )
+	esegui A/M
+if ( (B==blu && I==arancione) || (B==arancione && I==blu) )
+	sei a posto
+if ( (C==blu && E==arancione) || (C==arancione && E==blu) )
+	esegui C/E
+if ( (D==blu && Q==arancione) || (D==arancione && Q==blu) )
+	esegui D/Q
+if ( (F==blu && L==arancione) || (F==arancione && L==blu) )
+	esegui F/L
+if ( (H==blu && R==arancione) || (H==arancione && R==blu) )
+	esegui H/R
+if ( (J==blu && P==arancione) || (J==arancione && P==blu) )
+	esegui J/P
+if ( (N==blu && T==arancione) || (N==arancione && T==blu) )
+	esegui N/T
+
+//inserire la coppia blu-arancione
+
+if (B*==blu)			*B riferito allo spigolo, il resto delle lettere sono riferite agli angoli
+{
+	if (A==giallo && N==arancione && Q==blu)
+		esegui A
+	if (B==giallo && J==arancione && M==blu)
+		esegui B
+	if (C==giallo && F==arancione && I==blu)
+		esegui C
+	if (D==giallo && R==arancione && E==blu)
+		esegui D
+	if (E==giallo && D==arancione && R==blu)
+		esegui E
+	if (F==giallo && I==arancione && C==blu)
+		esegui F
+	if (G==giallo && V==arancione && L==blu)
+		esegui G
+	if (H==giallo && S==arancione && U==blu)
+		esegui H
+	if (I==giallo && C==arancione && F==blu)
+		esegui I
+	if (J==giallo && M==arancione && B==blu)
+		esegui J
+	if (K==giallo && Y==arancione && P==blu)
+		esegui K
+	if (L==giallo && G==arancione && V==blu)
+		esegui L
+	if (M==giallo && B==arancione && J==blu)
+		esegui M
+	if (N==giallo && Q==arancione && A==blu)
+		esegui N
+	if (O==giallo && Z==arancione && T==blu)
+		esegui O
+	if (P==giallo && K==arancione && Y==blu)
+		esegui P
+	if (Q==giallo && A==arancione && N==blu)
+		esegui Q
+	if (R==giallo && E==arancione && D==blu)
+		esegui R
+	if (S==giallo && U==arancione && H==blu)
+		esegui S
+	if (T==giallo && O==arancione && Z==blu)
+		esegui T
+	if (U==giallo && H==arancione && S==blu)
+		esegui U
+	if (V==giallo && L==arancione && G==blu)
+		esegui V
+	if (Y==giallo && P==arancione && K==blu)
+		esegui Y
+	if (Z==giallo && T==arancione && O==blu)
+		esegui Z
+}
+else
+{
+	[copia uguale identica dell’if però leggi gli algoritmi della colonna “spigolo orientato 	incorrettamente”]
+}
+
+y
+//sistemare lo spigolo arancione-verde (copia di quello blu-arancione con un caso in meno e cambiano i colori)
+
+if ( (A==arancione && M==verde) || (A==verde && M==arancione) )
+	esegui A/M
+if ( (B== arancione && I==verde) || (B==verde && I==arancione) )
+	sei a posto
+if ( (C==arancione && E==verde) || (C==verde && E==arancione) )
+	esegui C/E
+if ( (D==arancione && Q==verde) || (D==verde && Q==arancione) )
+	esegui D/Q
+if ( (F==arancione && L==verde) || (F==verde && L==arancione) )
+	esegui F/L
+if ( (J==arancione && P==verde) || (J==verde && P==arancione) )
+	esegui J/P
+if ( (N==arancione && T==verde) || (N==verde && T==arancione) )
+	esegui N/T
+
+//inserire la coppia arancione-verde (stesso concetto di quello blu-arancione)
+
+if (B*==arancione)		*B riferito allo spigolo, il resto delle lettere sono riferite agli angoli
+{
+	if (A==giallo && N==verde && Q==arancione)
+		esegui A
+	if (B==giallo && J==verde && M==arancione)
+		esegui B
+	if (C==giallo && F==verde && I==arancione)
+		esegui C
+	if (D==giallo && R==verde && E==arancione)
+		esegui D
+	if (E==giallo && D==verde && R==arancione)
+		esegui E
+	if (F==giallo && I==verde && C==arancione)
+		esegui F
+	if (G==giallo && V==verde && L==arancione)
+		esegui G
+	if (I==giallo && C==verde && F==arancione)
+		esegui I
+	if (J==giallo && M==verde && B==arancione)
+		esegui J
+	if (K==giallo && Y==verde && P==arancione)
+		esegui K
+	if (L==giallo && G==verde && V==arancione)
+		esegui L
+	if (M==giallo && B==verde && J==arancione)
+		esegui M
+	if (N==giallo && Q==verde && A==arancione)
+		esegui N
+	if (O==giallo && Z==verde && T==arancione)
+		esegui O
+	if (P==giallo && K==verde && Y==arancione)
+		esegui P
+	if (Q==giallo && A==verde && N==arancione)
+		esegui Q
+	if (R==giallo && E==verde && D==arancione)
+		esegui R
+	if (T==giallo && O==verde && Z==arancione)
+		esegui T
+	if (V==giallo && L==verde && G==arancione)
+		esegui V
+	if (Y==giallo && P==verde && K==arancione)
+		esegui Y
+	if (Z==giallo && T==verde && O==arancione)
+		esegui Z
+}
+else
+{
+	[copia uguale identica dell’if però leggi gli algoritmi della colonna “spigolo orientato 	incorrettamente”]
+}
+
+y
+
+//sistemare lo spigolo verde-rosso (copia di quello arancione-verde ma con un caso in meno e cambiano i colori)
+
+if ( (A==verde && M==rosso) || (A==rosso && M==verde) )
+	esegui A/M
+if ( (B==verde && I==rosso) || (B==rosso && I==verde) )
+	esegui B/I
+if ( (C==verde && E==rosso) || (C==rosso && E==verde) )
+	esegui C/E
+if ( (D==verde && Q==rosso) || (D==rosso && Q==verde) )
+	esegui D/Q
+if ( (F==verde && L==rosso) || (F==rosso && L==verde) )
+	esegui F/L
+if ( (J==verde && P==rosso) || (J==rosso && P==verde) )
+	esegui J/P
+
+//inserire la coppia verde-rosso (di nuovo stesso concetto dell’altro)
+
+if (B*==verde)		*B riferito allo spigolo, il resto delle lettere sono riferite agli angoli
+{
+	if (A==giallo && N==rosso && Q==verde)
+		esegui A
+	if (B==giallo && J==rosso && M==verde)
+		esegui B
+	if (C==giallo && F==rosso && I==verde)
+		esegui C
+	if (D==giallo && R==rosso && E==verde)
+		esegui D
+	if (E==giallo && D==rosso && R==verde)
+		esegui E
+	if (F==giallo && I==rosso && C==verde)
+		esegui F
+	if (G==giallo && V==rosso && L==verde)
+		esegui G
+	if (I==giallo && C==rosso && F==verde)
+		esegui I
+	if (J==giallo && M==rosso && B==verde)
+		esegui J
+	if (K==giallo && Y==rosso && P==verde)
+		esegui K
+	if (L==giallo && G==rosso && V==verde)
+		esegui L
+	if (M==giallo && B==rosso && J==verde)
+		esegui M
+	if (N==giallo && Q==rosso && A==verde)
+		esegui N
+	if (P==giallo && K==rosso && Y==verde)
+		esegui P
+	if (Q==giallo && A==rosso && N==verde)
+		esegui Q
+	if (R==giallo && E==rosso && D==verde)
+		esegui R
+	if (V==giallo && L==rosso && G==verde)
+		esegui V
+	if (Y==giallo && P==rosso && K==verde)
+		esegui Y
+}
+else
+{
+	[copia uguale identica dell’if però leggi gli algoritmi della colonna “spigolo orientato 	incorrettamente”]
+}
+
+y
+
+//sistemare lo spigolo rosso-blu (ebbene si, caso in meno e cambiano i colori)
+
+if ( (A==rosso && M==blu) || (A==blu && M==rosso) )
+	esegui A/M
+if ( (B==rosso && I==blu) || (B==blu && I==rosso) )
+	esegui B/I
+if ( (C==rosso && E==blu) || (C==blu && E==rosso) )
+	esegui C/E
+if ( (D==rosso && Q==blu) || (D==blu && Q==rosso) )
+	esegui D/Q
+if ( (F==rosso && L==blu) || (F==blu && L==rosso) )
+	esegui F/L
+
+//inserire la coppia rosso-blu (ormai non serve più che te lo dica)
+
+if (B*==rosso)		*B riferito allo spigolo, il resto delle lettere sono riferite agli angoli
+{
+	if (A==giallo && N==blu && Q==rosso)
+		esegui A
+	if (B==giallo && J==blu && M==rosso)
+		esegui B
+	if (C==giallo && F==blu && I==rosso)
+		esegui C
+	if (D==giallo && R==blu && E==rosso)
+		esegui D
+	if (E==giallo && D==blu && R==rosso)
+		esegui E
+	if (F==giallo && I==blu && C==rosso)
+		esegui F
+	if (G==giallo && V==blu && L==rosso)
+		esegui G
+	if (I==giallo && C==blu && F==rosso)
+		esegui I
+	if (J==giallo && M==blu && B==rosso)
+		esegui J
+	if (L==giallo && G==blu && V==rosso)
+		esegui L
+	if (M==giallo && B==blu && J==rosso)
+		esegui M
+	if (N==giallo && Q==blu && A==rosso)
+		esegui N
+	if (Q==giallo && A==blu && N==rosso)
+		esegui Q
+	if (R==giallo && E==blu && D==rosso)
+		esegui R
+	if (V==giallo && L==blu && G==rosso)
+		esegui V
+}
+else
+{
+	[copia uguale identica dell’if però leggi gli algoritmi della colonna “spigolo orientato 	incorrettamente”]
+}
+
+y
+
+//controllo spigoli nell’oll e AUF per dimezzare i casi
+
+if (A==bianco)
+{
+	if (B==bianco)
+	{
+		if (C==bianco)
+			tipologia=cross
+		else
+			esegui U’
+			tipologia=L
+	}
+	else
+	{
+		if (C==bianco)
+			esegui U
+			tipologia=I
+		else
+			tipologia=L
+	}
+}
+else
+{
+	if (B==bianco)
+	{
+		if (C==bianco)
+			esegui U2
+			tipologia=L
+		else
+			tipologia=I
+	}
+	else
+	{
+		if (C==bianco)
+			esegui U
+			tipologia=L
+		else
+			tipologia=dot
+	}
+}
+
+//controllo angoli dell’oll
+
+A=1	B=1	C=1
+N=2	J=2	F=2
+Q=3	M=3	I=3
+
+
+if (A==bianco)
+	if (B==bianco)
+		if (C==bianco)
+			case=ABC
+		if (F==bianco)
+			case=ABF
+		if (I==bianco)
+			case=ABI
+	if (J==bianco)
+		if (C==bianco)
+			case=AJC
+		if (F==bianco)
+			case=AJF
+		if (I==bianco)
+			case=AJI
+	if (M==bianco)
+		if (C==bianco)
+			case=AMC
+		if (F==bianco)
+			case=AMF
+		if (I==bianco)
+			case=AMI
+if (N==bianco)
+	if (B==bianco)
+		if (C==bianco)
+			case=NBC
+		if (F==bianco)
+			case=NBF
+		if (I==bianco)
+			case=NBI
+	if (J==bianco)
+		if (C==bianco)
+			case=NJC
+		if (F==bianco)
+			case=NJF
+		if (I==bianco)
+			case=NJI
+	if (M==bianco)
+		if (C==bianco)
+			case=NMC
+		if (F==bianco)
+			case=NMF
+		if (I==bianco)
+			case=NMI
+if (Q==bianco)
+	if (B==bianco)
+		if (C==bianco)
+			case=QBC
+		if (F==bianco)
+			case=QBF
+		if (I==bianco)
+			case=QBI
+	if (J==bianco)
+		if (C==bianco)
+			case=QJC
+		if (F==bianco)
+			case=QJF
+		if (I==bianco)
+			case=QJI
+	if (M==bianco)
+		if (C==bianco)
+			case=QMC
+		if (F==bianco)
+			case=QMF
+		if (I==bianco)
+			case=QMI
+
+//oll vero e proprio
+
+if (tipologia==L)
+	switch (case)
+		case ABC: oll 28
+		case ABF: U oll 43
+		case ABI: U oll 31
+		case AJC: oll 37
+		case AJF: oll 5
+		case AJI: oll 44
+		case AMC: U2 oll 37
+		case AMF: oll 32
+		case AMI: U oll 6
+		case NBC: oll 29
+		case NBF: oll 11
+		case NBI: oll 38
+		case NJC: U’ oll 10
+		case NJF: oll 7
+		case NJI: U2 oll 50
+		case NMC: oll 41
+		case NMF: oll 54
+		case NMI: U oll 47
+		case QBC: U’ oll 42
+		case QBF: U oll 36
+		case QBI: U oll 8
+		case QJC: oll 30
+		case QJF: U oll 49
+		case QJI: U oll 53
+		case QMC: oll 9
+		case QMF: oll 48
+		case QMI: U oll 12
+if (tipologia==I)
+	switch (case) 
+		case ABC: oll 57
+		case ABF: U’ oll 46 
+		case ABI: U2 oll 34
+		case AJC: U2 oll 40
+		case AJF: oll 15
+		case AJI: F’ L’ U’ L U F
+		case AMC: oll 40
+		case AMF: L’ U’ L U L F’ L’ F
+		case AMI: U2 oll 14
+		case NBC: oll 33
+		case NBF: oll 16
+		case NBI: oll 39
+		case NJC: U2 oll 15
+		case NJF: oll 13
+		case NJI: oll 51
+		case NMC: U oll 46
+		case NMF: oll 55
+		case NMI: U oll 52
+		case QBC: oll 45
+		case QBF: U2 oll 39
+		case QBI: oll 16
+		case QJC: oll 34
+		case QJF: U’ oll 52
+		case QJI: oll 56
+		case QMC: oll 14
+		case QMF: F’ U’ L’ U L U’ L’ U L F
+		case QMI: U2 oll 16
+if (tipologia==cross)
+	switch (case)
+		case ABC: sei a posto
+		case ABF: oll 23
+		case ABI: U oll 24
+		case AJC: oll 25
+		case AJF: F U F’ U’ F U2 F’
+		case AJI: U oll 23
+		case AMC: U2 oll 25
+		case AMF: U2 oll 24
+		case AMI: R’ U’ R U’ R’ U2 R
+		case NBC: oll 24
+		case NBF: L U L’ U L U2 L’
+		case NBI: U oll 25
+		case NJC: B U B’ U B U2 B’
+		case NJF: oll 27
+		case NJI: U2 oll 22
+		case NMC: R2 D’ R U2 R’ D R U2 R’
+		case NMF: oll 21
+		case NMI: U’ oll 22
+		case QBC: U’ oll 23
+		case QBF: U’ oll 25
+		case QBI: oll 26
+		case QJC: U’ oll 24
+		case QJF: U oll 22
+		case QJI: U oll 21
+		case QMC: L’ U’ L U’ L’ U2 L
+		case QMF: oll 22
+		case QMI: B’ U’ B U’ B’ U2 B
+if (tipologia=dot)
+	switch (case)
+		case ABC: oll 20
+		case ABF: oll 18
+		case ABI: oll 19
+		case AJC: oll 17
+		case AJF: U2 oll 3
+		case AJI: U oll 18
+		case AMC: U2 oll 17
+		case AMF: U oll 19
+		case AMI: U’ oll 4
+		case NBC: U’ oll 19
+		case NBF: U oll 3
+		case NBI: U oll 17
+		case NJC: oll 3
+		case NJF: U’ oll 3
+		case NJI: U2 oll 2
+		case NMC: U2 oll 18
+		case NMF: U oll 1
+		case NMI: U’ oll 2
+		case QBC: U’ oll 18
+		case QBF: U’ oll 17
+		case QBI: U2 oll 4
+		case QJC: U2 oll 19
+		case QJF: U oll 2
+		case QJI: oll 1
+		case QMC: U oll 4
+		case QMF: oll 2
+		case QMI: oll 4
+
+//controllo headlights nel pll (capire come vanno scambiati gli angoli)
+
+if (N==M)
+{
+	if (J==I)
+		tipologia=EPLL
+	else
+		tipologia=adj
+		esegui U’
+}
+else
+{
+	if (J==I)
+		tipologia=adj
+		esegui U2
+	else
+	{	
+		if (F==H)
+			tipologia=adj
+			esegui U
+		else
+		{
+			if (Q==R)
+				tipologia=adj
+			else
+				tipologia=diag
+		}
+	}
+}
+
+//pll vero e proprio	*le lettere che hanno un asterisco si riferiscono agli spigoli, le altre agli angoli
+			**quando dico M*==-N vuol dire “lo spigolo M ha il colore opposto 				all’angolo N?” (blu opposto a verde e rosso opposto ad arancione)
+			***vuol dire “lo spigolo M è diverso dall’angolo N e anche dall’opposto di 			N?” (in pratica “lo spigolo M è adiacente a N?”)
+
+if (tipologia==adj)
+{
+	if (Q*==Q)
+	{
+		if (M*==N)
+			esegui Jb
+		if (M*==-N)**
+			esegui F
+		if (M*!=N && M*!=-N)***
+			esegui Ja
+	}
+	if (Q*==-Q)
+	{
+		if (M*==N)
+			esegui T
+		if (M*==-N)
+			esegui Gd
+		if (M*!=N && M*!=-N)
+			esegui Gb
+	}
+	if (Q*!=Q && Q*!=-Q)
+	{
+		if (M*==N)
+			esegui Rb
+		if (M*==-N)
+			esegui Ga
+		if (M*!=N && M*!=-N)
+		{
+			if (I*==J)
+				esegui Ab
+			if (I*==-J)
+				esegui Aa
+			if (I*!=J && I*!=-J)
+			{
+				if (M*==M)
+					esegui Gc
+				else
+					esegui Ra
+			}
+		}
+	}
+}
+if (tipologia==EPLL)
+{
+	//controllo barra di un lato corretto (per semplificare le U perm)
+	if (M*==M)
+		case=Uperm
+	if (I*==I)
+		esegui U’
+		case=Uperm
+	if (E*==E)
+		esegui U2
+		case=Uperm
+	if (Q*==Q)
+		esegui U
+		case=Uperm
+	//riprendo con l’eseguire il vero pll
+	if (case==Uperm)
+	{
+		if (I*==I)
+			sei a posto
+		if (I*==-I)
+			esegui Ua
+		if (I*!=I && I*!=-I)
+			esegui Ub
+	}
+	if (case!=Uperm)
+	{
+		if (M*==-M)
+			esegui H
+		else
+		{
+			if (M*==I)
+				esegui Z (l’algoritmo non la rotazione)
+			else
+				esegui U Z (sempre l’algoritmo)
+		}
+	}
+}
+if (tipologia==diag)
+{
+	if (M*==N)
+	{
+		if (Q*==Q)
+			esegui U’ V
+		if (Q*==-Q)
+			esegui Na
+		if (Q*!=Q && Q*!=-Q)
+			esegui U Y (ancora una volta mi riferisco all’algoritmo Y non alla rotazione)
+	}
+	if (M*==-N*)
+	{
+		if (I*==J)
+			esegui U2 V
+		if (I*==-J)
+			esegui Nb
+		if (I*!=J && I*!=-J)
+			esegui U2 Y (ormai lo sai già, da qui in poi non lo dico più)
+	}
+	if (M*!=N && M*!=-N)
+	{
+		if (Q*==Q)
+			esegui U’ Y
+		if (Q*==-Q)
+			esegui V
+		if (Q*!=Q && Q*!=-Q)
+		{
+			if (E*==F)
+				esegui U V
+			if (E*==-F)
+				esegui Y
+			if (E*!=F && E*!=-F)
+			{
+				if (E*==I)
+					esegui U E
+				else
+					esegui E
+			}
+		}
+	}
+}
+
+//AUF (ultima mossa della risoluzione)
+
+if (E==blu)
+	sei a posto
+if (E==arancione)
+	esegui U’
+if (E==verde)
+	esegui U2
+if (E==rosso)
+	esegui U
