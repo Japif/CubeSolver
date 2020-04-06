@@ -1,0 +1,195 @@
+Algoritmi
+
+Croce gialla
+
+blu				arancione		verde			rosso
+
+A	U2 F2			U R2			B2			U’ L2	
+B	U F2			R2			U’ B2			U2 L2
+C	F2			U’ R2			U2 B2			U L2
+D	U’ F2			U2 R2			U B2			L2
+E	U’ R’ F		F R’ F’			U L’ B			F’ L F
+F	R’ D’			R’			D’ R’ D		D2 R’ D2
+G	F’ R’ D’								
+H	L D			D2 L D2		D L D’			L
+I	R’ F			D’ R’ F D		R B’ R’		U F’ L F
+J	R2 F			D B’ D’		B’			D’ B’ D
+K	R F			R D’ F D					
+L	F			D’ F D			D2 F D2		D F D’
+M	U R’ F			B’ R			U’ L’ B			B L’ B’
+N	L’ D			B2 R			D L’ D’		L’
+O	B’ L’ D			B R			B’ D L’ D’		
+P	R D’			R			D’ R D			D2 R D2
+Q	L F’			U B’ R			L’ B			L D F’ D’
+R	F’			D’ F’ D		L2 B			D F’ D’
+S	L’ F’			L’ D’ F’ D		L B			L’ D F’ D’
+T	L2 F’			D B D’			B			D’ B D
+U	-									
+V	D’			-						
+Y	D2			B D B’ D’		-			
+Z	D			L B2 R			L’ D L D’		-
+
+F2L*
+
+portare spigolo in B, I
+
+A, M	U
+B, I	-
+C, E	U’
+D, Q	U2
+F, L	F’ U’ F
+H, R	F U’ F’
+J, P	B U B’
+N, T	B’ U B
+
+angolo
+
+spigolo orientato correttamente**				spigolo orientato incorrettamente
+
+A	R U’ R2 F R F’					U F’ U2 F2 R’ F’ R
+B	U2 R U’ R’ U’ R U’ R’ U R U’ R’			U F’ U2 F U F’ U’ F
+C	R U2 R’ U’ R U R’					U’ R’ F R F’ U’ F’ U’ F
+D	R U2 R2 F R F’					U F’ U’ F2 R’ F’ R
+E	U’ R U R’						F’ U2 F U2 F’ U F
+F	U R U’ R’						U’ R U2 R’ U F’ U’ F
+G	R U’ R2 F R F’					U’ R U’ R’ F’ U’ F
+H	U’ L’ U L U’ R U R’					U F’ L F L2 R U2 R’ L
+I	U’ R U’ R’ U R U R’					R U’ R’ U2 F’ U’ F
+J	U R U R’ U2 R U’ R’ U R U’ R’			U2 F’ U F U’ F’ U’ F
+K	U’ R’ U’ R2 U2 R’					R’ U’ R U2 F’ U’ F
+L	R U R’ U’ R U R’					U R U R’ U2 F’ U F
+M	U R’ U2 R2 U R2 U R				F’ U F
+N	U R U2 R’ U2 R U’ R’				U2 F’ U’ F
+O	U2 L U’ L’ R U2 R’					U L U’ L’ U2 F’ U’ F
+P	U R’ U R U R U R’					R’ U R F’ U F
+Q	R U’ R’ U’ R U R’					U’ F’ U’ F U2 F’ U F
+R	U2 R U R’ U2 R U’ R’				R U R’ U2 F’ U’ F
+S	U L’ R U’ R’ L					U2 L’ U’ L F’ U’ F
+T	U2 L U L’ U R U R’					U’ L F’ U2 F L’
+U	L’ U L R U’ R’					U’ L F’ L’ F U’ F’ U’ F
+V	U’ R’ F R F’ R U R’					U2 R U’ R’ U’ F’ U F
+Y	U2 R’ U R U2 R U’ R’				U B U F’ U’ F B’
+Z	U B’ U2 R U R’ B					L U’ L’ F’ U2 F
+
+*effettuare una rotazione y tra una coppia e l’altra
+
+**coppia blu-arancione: 	blu su, arancione a lato
+	    arancione-verde:	arancione su, verde a lato
+	    verde-rosso:	verde su, rosso a lato
+	    rosso-blu:		rosso su, blu a lato
+
+OLL
+
+AUF preliminare
+sezione L
+	AB: 	U’
+	A: 	-
+	BC:	U2
+	C: 	U
+sezione I
+	AC: 	U
+	B:	-
+sezione cross:
+	ABC:	-
+sezione dot:
+	0:	-
+
+ordine algoritmi preso da jperm.net, l’angolo di svolgimento è lo stesso che uso io, per riferimento
+
+1	R U2 R2 F R F' U2 R' F R F'
+2	F R U R' U' F' B U L U' L' B'
+3	F R U R' U' F' U' F' U' L' U L F
+4	F U R U' R' F' U' F R U R' U' F'
+5	R' F2 L F L' F R
+6	L F2 R' F' R F' L'
+7	L F R' F R F2 L'
+8	R' F' L F' L' F2 R
+9	R U R' U' R' F R2 U R' U' F'
+10	R U R' U R' F R F' R U2 R'
+11	L F R' F R' D R D' R F2 L'
+12	L R2 F' R F' R' F2 R F' L' R
+13	F U R U' R2 F' R U R U' R'
+14	R' F R U R' F' R F U' F'
+15	F U R U' R' F' R' U' F' U F R
+16	F' U' L' U L F L U F U' F' L'
+17	F R' F' R2 L' B R B' R' B' L R'
+18	L F R' F R F2 L2 B' R B' R' B2 L
+19	R L' B R B R' B' L R2 F R F'
+20	F' U' L' U L F R' U' R' F R F' U R
+21	R U2 R' U' R U R' U' R U' R'
+22	R U2 R2 U' R2 U' R2 U2 R
+23	R2 D R' U2 R D' R' U2 R'
+24	L F R' F' L' F R F'
+25	F R' F' L F R F' L'
+26	R U2 R' U' R U' R'
+27	R U R' U R U2 R'
+28	L F R' F' L' R U R U' R'
+29	R U R' U' R U' R' F' U' F R U R'
+30	F R' F R2 U' R' U' R U R' F2
+31	R' U' F U R U' R' F' R
+32	L U F' U' L' U L F L'
+33	R U R' U' R' F R F'
+34	R U R2 U' R' F R U R U' F'
+35	R U2 R2 F R F' R U2 R'
+36	L' U' L U' L' U L U L F' L' F
+37	F R' F' R U R U' R'
+38	R U R' U R U' R' U' R' F R F'
+39	L F' L' U' L U F U' L'
+40	R' F R U R' U' F' U R
+41	R U R' U R U2 R' F R U R' U' F'
+42	R' U' R U' R' U2 R F R U R' U' F'
+43	F' U' L' U L F
+44	F U R U' R' F'
+45	F R U R' U' F'
+46	R' U' R' F R F' U R
+47	F’ L’ U’ L U L’ U’ L U F
+48	F R U R' U' R U R' U' F'
+49	F R U R' U' F2 U' L' U L F
+50	F' U' L' U L F B U L U' L' B'
+51	F U R U' R' U R U' R' F'
+52	R U R' U R U' B U' B' R'
+53	F' L' U' L U F2 U R U' R' U R U' R' F'
+54	F R U R' U' F2 U' L' U L U' L' U L F
+55	R' F R U R U' R2 F' R2 U' R' U R U R'
+56	F R U R' U' F' U R U R D R' U' R D' R2
+57	R U R' U' R' L F R F' L'
+PLL
+
+Controllo headlights
+Sezione adjacent swap
+	B:	U’
+	R:	U2
+	F:	U
+	L:	-
+Sezione EPLL
+	Controllo barra
+		Sezione U
+			B:	-
+			R: 	U’
+			F:	U2
+			L:	U
+		Sezione Z, H 
+Sezione diagonal swap
+	No headlights
+
+Aa	x L2 D2 L’ U’ L D2 L’ U L’ x’
+Ab	x' L2 D2 L U L' D2 L U' L x
+F	R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R
+Ga	R2 U R' U R' U' R U' R2 U' D R' U R D'
+Gb	R' U' R U D' R2 U R' U R U' R U' R2 D
+Gc	R2 U' R U' R U R' U R2 U D' R U' R' D
+Gd	R U R' U' D R2 U' R U' R' U R' U R2 D'
+Ja	x R2 F R F' R U2 L' B L U2 x'
+Jb	R U R' F' R U R' U' R' F R2 U' R'
+Ra	R U' R' U' R U R D R' U' R D' R' U2 R'
+Rb	R2 F R U R U' R' F' R U2 R' U2 R
+T	R U R' U' R' F R2 U' R' U' R U R' F'
+E	x' R U' R' D R U R' D' R U R' D R U' R' D' x
+Na	R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'
+Nb	R' U R U' R' F' U' F R U R' F R' F' R U' R
+V	R' U R' U' R D' R' D R' U D' R2 U' R2 D R2
+Y	F R U' R' U' R U R' F' R U R' U' R' F R F'
+H	R2 U2 R U2 R2 U2 R2 U2 R U2 R2 (la versione R U è stranissima lmao)
+Ua	R U' R U R U R U' R' U' R2
+Ub	R2 U R U R' U' R' U' R' U R'
+Z	R' U' R U' R U R U' R' U R U R2 U' R'
