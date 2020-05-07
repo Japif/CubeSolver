@@ -39,16 +39,20 @@ void loop() {
     //carattere in input
     char character;
     //Prendi i dati, passa in carattere e poi aggiungi a string. Conta.
-    while (Serial.available())
-    {
+     while (!Serial.available()) {}
+      while (Serial.available())
+     {
       character = Serial.read();
       string.concat(character);
       totale++;
-    }
-    //Porta tutto ad array
-    string.toCharArray(mosse, 200);
-    delay(200);
-    //Leggi un comando completo alal volta
+      delay(10);
+     }
+     //Porta tutto ad array
+     string.toCharArray(mosse, 200);
+     delay(200);
+     //OPZ 
+     Serial.println(mosse);
+  //Leggi un comando completo alla volta
     for (int i = 0; i <= totale; i++) {
       if (mosse[i] == ' ')
         i++;
