@@ -1,5 +1,5 @@
 //IMPOSTA passi ogni giro (200) e RPM
-const int PASSI = 360;
+const int PASSI = 200;
 const int VELOCITA = 20;
 
 //Motori {dir, step}
