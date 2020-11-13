@@ -32,9 +32,9 @@ void faiStep(int passi, int mot[]) {
     digitalWrite(mot[0], HIGH);
   }
   for (int i = 0; i < passi; i++) {
-    digitalWrite(passi, HIGH);
+    digitalWrite(mot[1], HIGH);
     delayMicroseconds(ics);
-    digitalWrite(passi, LOW);
+    digitalWrite(mot[1], LOW);
     delayMicroseconds(ics);
   }
 }
