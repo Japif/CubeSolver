@@ -1,4 +1,3 @@
-
 array1 = [00, 00, 00, 11, 12, 13, 00, 00, 00, 00, 00, 00]
 array2 = [00, 00, 00, 14, 15, 16, 00, 00, 00, 00, 00, 00]
 array3 = [00, 00, 00, 17, 18, 19, 00, 00, 00, 00, 00, 00]
@@ -11,11 +10,11 @@ array9 = [00, 00, 00, 37, 38, 39, 00, 00, 00, 00, 00, 00]
 
 
 
-array_mosse = [00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00]
-array_soluzioni = []
+movesArray = [00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00]
+solutionArray = []
 movimento_completo = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-#funzioni temporanee
+#temp functions
 def print_arrays():
     print(array1)
     print(array2)
@@ -29,16 +28,16 @@ def print_arrays():
     return
 
 print_arrays()
-##dichiarazioni funzioni
-#funzioni standard
+##func declarations
+# standard functions
 def front():
     global array3
     global array4
     global array5
     global array6
     global array7
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -46,42 +45,42 @@ def front():
 
         if (i <= 2):
             counter_array = i + 3
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         elif (i > 2 and i <= 7):
             counter_array = i - 1
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 7 and i <= 12):
             counter_array = i - 6
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 12 and i <= 17):
             counter_array = i - 11
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         i = i + 1
 
-    array4[6] = array_mosse[0]
-    array5[6] = array_mosse[1]
-    array6[6] = array_mosse[2]
-    array3[5] = array_mosse[3]
-    array4[5] = array_mosse[4]
-    array5[5] = array_mosse[5]
-    array6[5] = array_mosse[6]
-    array7[5] = array_mosse[7]
-    array3[4] = array_mosse[8]
-    array4[4] = array_mosse[9]
-    array6[4] = array_mosse[11]
-    array7[4] = array_mosse[12]
-    array3[3] = array_mosse[13]
-    array4[3] = array_mosse[14]
-    array5[3] = array_mosse[15]
-    array6[3] = array_mosse[16]
-    array7[3] = array_mosse[17]
-    array4[2] = array_mosse[18]
-    array5[2] = array_mosse[19]
-    array6[2] = array_mosse[20]
-    array_soluzioni.append("F")
+    array4[6] = movesArray[0]
+    array5[6] = movesArray[1]
+    array6[6] = movesArray[2]
+    array3[5] = movesArray[3]
+    array4[5] = movesArray[4]
+    array5[5] = movesArray[5]
+    array6[5] = movesArray[6]
+    array7[5] = movesArray[7]
+    array3[4] = movesArray[8]
+    array4[4] = movesArray[9]
+    array6[4] = movesArray[11]
+    array7[4] = movesArray[12]
+    array3[3] = movesArray[13]
+    array4[3] = movesArray[14]
+    array5[3] = movesArray[15]
+    array6[3] = movesArray[16]
+    array7[3] = movesArray[17]
+    array4[2] = movesArray[18]
+    array5[2] = movesArray[19]
+    array6[2] = movesArray[20]
+    solutionArray.append("F")
     return
 
 def front_inv():
@@ -90,8 +89,8 @@ def front_inv():
     global array5
     global array6
     global array7
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -99,42 +98,42 @@ def front_inv():
 
         if (i <= 2):
             counter_array = i + 3
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         elif (i > 2 and i <= 7):
             counter_array = i - 1
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 7 and i <= 12):
             counter_array = i - 6
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 12 and i <= 17):
             counter_array = i - 11
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         i = i + 1
 
-    array6[2] = array_mosse[0]
-    array5[2] = array_mosse[1]
-    array4[2] = array_mosse[2]
-    array7[3] = array_mosse[3]
-    array6[3] = array_mosse[4]
-    array5[3] = array_mosse[5]
-    array4[3] = array_mosse[6]
-    array3[3] = array_mosse[7]
-    array7[4] = array_mosse[8]
-    array6[4] = array_mosse[9]
-    array4[4] = array_mosse[11]
-    array3[4] = array_mosse[12]
-    array7[5] = array_mosse[13]
-    array6[5] = array_mosse[14]
-    array5[5] = array_mosse[15]
-    array4[5] = array_mosse[16]
-    array3[5] = array_mosse[17]
-    array6[6] = array_mosse[18]
-    array5[6] = array_mosse[19]
-    array4[6] = array_mosse[20]
-    array_soluzioni.append("Fi")
+    array6[2] = movesArray[0]
+    array5[2] = movesArray[1]
+    array4[2] = movesArray[2]
+    array7[3] = movesArray[3]
+    array6[3] = movesArray[4]
+    array5[3] = movesArray[5]
+    array4[3] = movesArray[6]
+    array3[3] = movesArray[7]
+    array7[4] = movesArray[8]
+    array6[4] = movesArray[9]
+    array4[4] = movesArray[11]
+    array3[4] = movesArray[12]
+    array7[5] = movesArray[13]
+    array6[5] = movesArray[14]
+    array5[5] = movesArray[15]
+    array4[5] = movesArray[16]
+    array3[5] = movesArray[17]
+    array6[6] = movesArray[18]
+    array5[6] = movesArray[19]
+    array4[6] = movesArray[20]
+    solutionArray.append("Fi")
     return
 
 def right():
@@ -147,8 +146,8 @@ def right():
     global array7
     global array8
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
 
     i = 0
@@ -157,54 +156,54 @@ def right():
 
         if (i == 0):
             counter_array = i + 5
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i == 1):
             counter_array = i + 4
-            array_mosse[i] = array2[counter_array]
+            movesArray[i] = array2[counter_array]
         elif (i == 2):
             counter_array = i + 3
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         elif (i > 2 and i <= 7):
             counter_array = i + 2
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 7 and i <= 12):
             counter_array = i - 3
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 12 and i <= 17):
             counter_array = i - 8
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i == 18):
             counter_array = i - 13
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         elif (i == 19):
             counter_array = i - 14
-            array_mosse[i] = array8[counter_array]
+            movesArray[i] = array8[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
         i = i + 1
 
-    array6[9] = array_mosse[0]
-    array5[9] = array_mosse[1]
-    array4[9] = array_mosse[2]
-    array1[5] = array_mosse[3]
-    array4[8] = array_mosse[4]
-    array5[8] = array_mosse[5]
-    array6[8] = array_mosse[6]
-    array9[5] = array_mosse[7]
-    array2[5] = array_mosse[8]
-    array4[7] = array_mosse[9]
-    array6[7] = array_mosse[11]
-    array8[5] = array_mosse[12]
-    array3[5] = array_mosse[13]
-    array4[6] = array_mosse[14]
-    array5[6] = array_mosse[15]
-    array6[6] = array_mosse[16]
-    array7[5] = array_mosse[17]
-    array4[5] = array_mosse[18]
-    array5[5] = array_mosse[19]
-    array6[5] = array_mosse[20]
-    array_soluzioni.append("R")
+    array6[9] = movesArray[0]
+    array5[9] = movesArray[1]
+    array4[9] = movesArray[2]
+    array1[5] = movesArray[3]
+    array4[8] = movesArray[4]
+    array5[8] = movesArray[5]
+    array6[8] = movesArray[6]
+    array9[5] = movesArray[7]
+    array2[5] = movesArray[8]
+    array4[7] = movesArray[9]
+    array6[7] = movesArray[11]
+    array8[5] = movesArray[12]
+    array3[5] = movesArray[13]
+    array4[6] = movesArray[14]
+    array5[6] = movesArray[15]
+    array6[6] = movesArray[16]
+    array7[5] = movesArray[17]
+    array4[5] = movesArray[18]
+    array5[5] = movesArray[19]
+    array6[5] = movesArray[20]
+    solutionArray.append("R")
     return
 
 def right_inv():
@@ -217,8 +216,8 @@ def right_inv():
     global array7
     global array8
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -226,54 +225,54 @@ def right_inv():
 
         if (i == 0):
             counter_array = i + 5
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i == 1):
             counter_array = i + 4
-            array_mosse[i] = array2[counter_array]
+            movesArray[i] = array2[counter_array]
         elif (i == 2):
             counter_array = i + 3
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         elif (i > 2 and i <= 7):
             counter_array = i + 2
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 7 and i <= 12):
             counter_array = i - 3
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 12 and i <= 17):
             counter_array = i - 8
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i == 18):
             counter_array = i - 13
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         elif (i == 19):
             counter_array = i - 14
-            array_mosse[i] = array8[counter_array]
+            movesArray[i] = array8[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
         i = i + 1
 
-    array4[5] = array_mosse[0]
-    array5[5] = array_mosse[1]
-    array6[5] = array_mosse[2]
-    array7[5] = array_mosse[3]
-    array6[6] = array_mosse[4]
-    array5[6] = array_mosse[5]
-    array4[6] = array_mosse[6]
-    array3[5] = array_mosse[7]
-    array8[5] = array_mosse[8]
-    array6[7] = array_mosse[9]
-    array4[7] = array_mosse[11]
-    array2[5] = array_mosse[12]
-    array9[5] = array_mosse[13]
-    array6[8] = array_mosse[14]
-    array5[8] = array_mosse[15]
-    array4[8] = array_mosse[16]
-    array1[5] = array_mosse[17]
-    array6[9] = array_mosse[18]
-    array5[9] = array_mosse[19]
-    array4[9] = array_mosse[20]
-    array_soluzioni.append("Ri")
+    array4[5] = movesArray[0]
+    array5[5] = movesArray[1]
+    array6[5] = movesArray[2]
+    array7[5] = movesArray[3]
+    array6[6] = movesArray[4]
+    array5[6] = movesArray[5]
+    array4[6] = movesArray[6]
+    array3[5] = movesArray[7]
+    array8[5] = movesArray[8]
+    array6[7] = movesArray[9]
+    array4[7] = movesArray[11]
+    array2[5] = movesArray[12]
+    array9[5] = movesArray[13]
+    array6[8] = movesArray[14]
+    array5[8] = movesArray[15]
+    array4[8] = movesArray[16]
+    array1[5] = movesArray[17]
+    array6[9] = movesArray[18]
+    array5[9] = movesArray[19]
+    array4[9] = movesArray[20]
+    solutionArray.append("Ri")
     return
 
 def left():
@@ -286,8 +285,8 @@ def left():
     global array7
     global array8
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i=0
 
@@ -295,63 +294,63 @@ def left():
 
         if (i == 0):
             counter_array = i + 3
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i == 1):
             counter_array = i + 2
-            array_mosse[i] = array2[counter_array]
+            movesArray[i] = array2[counter_array]
         elif (i == 2):
             counter_array = i + 1
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         elif (i > 2 and i < 7):
             counter_array = i - 3
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i == 7):
             counter_array = i + 4
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 7 and i < 12):
             counter_array = i - 8
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i == 12):
             counter_array = i - 1
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 12 and i < 17):
             counter_array = i - 13
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif ( i == 17):
             counter_array = i - 6
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i == 18):
             counter_array = i - 15
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         elif (i == 19):
             counter_array = i - 16
-            array_mosse[i] = array8[counter_array]
+            movesArray[i] = array8[counter_array]
         else:
             counter_array = i - 17
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
         i = i + 1
 
-    array4[3] = array_mosse[0]
-    array5[3] = array_mosse[1]
-    array6[3] = array_mosse[2]
-    array4[2] = array_mosse[3]
-    array5[2] = array_mosse[4]
-    array6[2] = array_mosse[5]
-    array7[3] = array_mosse[6]
-    array3[3] = array_mosse[7]
-    array4[1] = array_mosse[8]
-    array6[1] = array_mosse[10]
-    array8[3] = array_mosse[11]
-    array2[3] = array_mosse[12]
-    array4[0] = array_mosse[13]
-    array5[0] = array_mosse[14]
-    array6[0] = array_mosse[15]
-    array9[3] = array_mosse[16]
-    array1[3] = array_mosse[17]
-    array6[11] = array_mosse[18]
-    array5[11] = array_mosse[19]
-    array4[11] = array_mosse[20]
-    array_soluzioni.append("L")
+    array4[3] = movesArray[0]
+    array5[3] = movesArray[1]
+    array6[3] = movesArray[2]
+    array4[2] = movesArray[3]
+    array5[2] = movesArray[4]
+    array6[2] = movesArray[5]
+    array7[3] = movesArray[6]
+    array3[3] = movesArray[7]
+    array4[1] = movesArray[8]
+    array6[1] = movesArray[10]
+    array8[3] = movesArray[11]
+    array2[3] = movesArray[12]
+    array4[0] = movesArray[13]
+    array5[0] = movesArray[14]
+    array6[0] = movesArray[15]
+    array9[3] = movesArray[16]
+    array1[3] = movesArray[17]
+    array6[11] = movesArray[18]
+    array5[11] = movesArray[19]
+    array4[11] = movesArray[20]
+    solutionArray.append("L")
     return
 
 def left_inv():
@@ -364,8 +363,8 @@ def left_inv():
     global array7
     global array8
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i=0
 
@@ -373,63 +372,63 @@ def left_inv():
 
         if (i == 0):
             counter_array = i + 3
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i == 1):
             counter_array = i + 2
-            array_mosse[i] = array2[counter_array]
+            movesArray[i] = array2[counter_array]
         elif (i == 2):
             counter_array = i + 1
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         elif (i > 2 and i < 7):
             counter_array = i - 3
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i == 7):
             counter_array = i + 4
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 7 and i < 12):
             counter_array = i - 8
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i == 12):
             counter_array = i - 1
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 12 and i < 17):
             counter_array = i - 13
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif ( i == 17):
             counter_array = i - 6
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i == 18):
             counter_array = i - 15
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         elif (i == 19):
             counter_array = i - 16
-            array_mosse[i] = array8[counter_array]
+            movesArray[i] = array8[counter_array]
         else:
             counter_array = i - 17
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
         i = i + 1
 
-    array6[11] = array_mosse[0]
-    array5[11] = array_mosse[1]
-    array4[11] = array_mosse[2]
-    array6[0] = array_mosse[3]
-    array5[0] = array_mosse[4]
-    array4[0] = array_mosse[5]
-    array1[3] = array_mosse[6]
-    array9[3] = array_mosse[7]
-    array6[1] = array_mosse[8]
-    array4[1] = array_mosse[10]
-    array2[3] = array_mosse[11]
-    array8[3] = array_mosse[12]
-    array6[2] = array_mosse[13]
-    array5[2] = array_mosse[14]
-    array4[2] = array_mosse[15]
-    array3[3] = array_mosse[16]
-    array7[3] = array_mosse[17]
-    array4[3] = array_mosse[18]
-    array5[3] = array_mosse[19]
-    array6[3] = array_mosse[20]
-    array_soluzioni.append("Li")
+    array6[11] = movesArray[0]
+    array5[11] = movesArray[1]
+    array4[11] = movesArray[2]
+    array6[0] = movesArray[3]
+    array5[0] = movesArray[4]
+    array4[0] = movesArray[5]
+    array1[3] = movesArray[6]
+    array9[3] = movesArray[7]
+    array6[1] = movesArray[8]
+    array4[1] = movesArray[10]
+    array2[3] = movesArray[11]
+    array8[3] = movesArray[12]
+    array6[2] = movesArray[13]
+    array5[2] = movesArray[14]
+    array4[2] = movesArray[15]
+    array3[3] = movesArray[16]
+    array7[3] = movesArray[17]
+    array4[3] = movesArray[18]
+    array5[3] = movesArray[19]
+    array6[3] = movesArray[20]
+    solutionArray.append("Li")
     return
 
 def back():
@@ -438,8 +437,8 @@ def back():
     global array5
     global array6
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -447,51 +446,51 @@ def back():
 
         if (i <= 2):
             counter_array = i + 3
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i == 3):
             counter_array = i - 3
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 3 and i <= 7):
             counter_array = i + 4
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i == 8):
             counter_array = i - 8
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 8 and i <= 12):
             counter_array = i - 1
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i == 13):
             counter_array = i - 13
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i > 13 and i <= 17):
             counter_array = i - 6
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
         i = i + 1
 
-    array6[0] = array_mosse[0]
-    array5[0] = array_mosse[1]
-    array4[0] = array_mosse[2]
-    array9[3] = array_mosse[3]
-    array1[3] = array_mosse[4]
-    array4[11] = array_mosse[5]
-    array5[11] = array_mosse[6]
-    array6[11] = array_mosse[7]
-    array9[4] = array_mosse[8]
-    array1[4] = array_mosse[9]
-    array4[10] = array_mosse[10]
-    array6[10] = array_mosse[12]
-    array9[5] = array_mosse[13]
-    array1[5] = array_mosse[14]
-    array4[9] = array_mosse[15]
-    array5[9] = array_mosse[16]
-    array6[9] = array_mosse[17]
-    array6[8] = array_mosse[18]
-    array5[8] = array_mosse[19]
-    array4[8] = array_mosse[20]
-    array_soluzioni.append("B")
+    array6[0] = movesArray[0]
+    array5[0] = movesArray[1]
+    array4[0] = movesArray[2]
+    array9[3] = movesArray[3]
+    array1[3] = movesArray[4]
+    array4[11] = movesArray[5]
+    array5[11] = movesArray[6]
+    array6[11] = movesArray[7]
+    array9[4] = movesArray[8]
+    array1[4] = movesArray[9]
+    array4[10] = movesArray[10]
+    array6[10] = movesArray[12]
+    array9[5] = movesArray[13]
+    array1[5] = movesArray[14]
+    array4[9] = movesArray[15]
+    array5[9] = movesArray[16]
+    array6[9] = movesArray[17]
+    array6[8] = movesArray[18]
+    array5[8] = movesArray[19]
+    array4[8] = movesArray[20]
+    solutionArray.append("B")
     return
 
 def back_inv():
@@ -500,8 +499,8 @@ def back_inv():
     global array5
     global array6
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -509,51 +508,51 @@ def back_inv():
 
         if (i <= 2):
             counter_array = i + 3
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i == 3):
             counter_array = i - 3
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i > 3 and i <= 7):
             counter_array = i + 4
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
         elif (i == 8):
             counter_array = i - 8
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i > 8 and i <= 12):
             counter_array = i - 1
-            array_mosse[i] = array5[counter_array]
+            movesArray[i] = array5[counter_array]
         elif (i == 13):
             counter_array = i - 13
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i > 13 and i <= 17):
             counter_array = i - 6
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
         i = i + 1
 
-    array4[8] = array_mosse[0]
-    array5[8] = array_mosse[1]
-    array6[8] = array_mosse[2]
-    array1[5] = array_mosse[3]
-    array9[5] = array_mosse[4]
-    array6[9] = array_mosse[5]
-    array5[9] = array_mosse[6]
-    array4[9] = array_mosse[7]
-    array1[4] = array_mosse[8]
-    array9[4] = array_mosse[9]
-    array6[10] = array_mosse[10]
-    array4[10] = array_mosse[12]
-    array1[3] = array_mosse[13]
-    array9[3] = array_mosse[14]
-    array6[11] = array_mosse[15]
-    array5[11] = array_mosse[16]
-    array4[11] = array_mosse[17]
-    array4[0] = array_mosse[18]
-    array5[0] = array_mosse[19]
-    array6[0] = array_mosse[20]
-    array_soluzioni.append("Bi")
+    array4[8] = movesArray[0]
+    array5[8] = movesArray[1]
+    array6[8] = movesArray[2]
+    array1[5] = movesArray[3]
+    array9[5] = movesArray[4]
+    array6[9] = movesArray[5]
+    array5[9] = movesArray[6]
+    array4[9] = movesArray[7]
+    array1[4] = movesArray[8]
+    array9[4] = movesArray[9]
+    array6[10] = movesArray[10]
+    array4[10] = movesArray[12]
+    array1[3] = movesArray[13]
+    array9[3] = movesArray[14]
+    array6[11] = movesArray[15]
+    array5[11] = movesArray[16]
+    array4[11] = movesArray[17]
+    array4[0] = movesArray[18]
+    array5[0] = movesArray[19]
+    array6[0] = movesArray[20]
+    solutionArray.append("Bi")
     return
 
 def up():
@@ -561,8 +560,8 @@ def up():
     global array2
     global array3
     global array4
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -570,40 +569,40 @@ def up():
 
         if (i <= 2):
             counter_array = i + 3
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i > 2 and i <= 5):
             counter_array = i
-            array_mosse[i] = array2[counter_array]
+            movesArray[i] = array2[counter_array]
         elif (i > 5 and i <= 8):
             counter_array = i - 3
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         else:
             counter_array = i - 9
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
 
         i = i + 1
 
-    array1[5] = array_mosse[0]
-    array2[5] = array_mosse[1]
-    array3[5] = array_mosse[2]
-    array1[4] = array_mosse[3]
-    array3[4] = array_mosse[5]
-    array1[3] = array_mosse[6]
-    array2[3] = array_mosse[7]
-    array3[3] = array_mosse[8]
-    array4[9] = array_mosse[9]
-    array4[10] = array_mosse[10]
-    array4[11] = array_mosse[11]
-    array4[0] = array_mosse[12]
-    array4[1] = array_mosse[13]
-    array4[2] = array_mosse[14]
-    array4[3] = array_mosse[15]
-    array4[4] = array_mosse[16]
-    array4[5] = array_mosse[17]
-    array4[6] = array_mosse[18]
-    array4[7] = array_mosse[19]
-    array4[8] = array_mosse[20]
-    array_soluzioni.append("U")
+    array1[5] = movesArray[0]
+    array2[5] = movesArray[1]
+    array3[5] = movesArray[2]
+    array1[4] = movesArray[3]
+    array3[4] = movesArray[5]
+    array1[3] = movesArray[6]
+    array2[3] = movesArray[7]
+    array3[3] = movesArray[8]
+    array4[9] = movesArray[9]
+    array4[10] = movesArray[10]
+    array4[11] = movesArray[11]
+    array4[0] = movesArray[12]
+    array4[1] = movesArray[13]
+    array4[2] = movesArray[14]
+    array4[3] = movesArray[15]
+    array4[4] = movesArray[16]
+    array4[5] = movesArray[17]
+    array4[6] = movesArray[18]
+    array4[7] = movesArray[19]
+    array4[8] = movesArray[20]
+    solutionArray.append("U")
     return
 
 def up_inv():
@@ -611,8 +610,8 @@ def up_inv():
     global array2
     global array3
     global array4
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -620,40 +619,40 @@ def up_inv():
 
         if (i <= 2):
             counter_array = i + 3
-            array_mosse[i] = array1[counter_array]
+            movesArray[i] = array1[counter_array]
         elif (i > 2 and i <= 5):
             counter_array = i
-            array_mosse[i] = array2[counter_array]
+            movesArray[i] = array2[counter_array]
         elif (i > 5 and i <= 8):
             counter_array = i - 3
-            array_mosse[i] = array3[counter_array]
+            movesArray[i] = array3[counter_array]
         else:
             counter_array = i - 9
-            array_mosse[i] = array4[counter_array]
+            movesArray[i] = array4[counter_array]
 
         i = i + 1
 
-    array3[3] = array_mosse[0]
-    array2[3] = array_mosse[1]
-    array1[3] = array_mosse[2]
-    array3[4] = array_mosse[3]
-    array1[4] = array_mosse[5]
-    array3[5] = array_mosse[6]
-    array2[5] = array_mosse[7]
-    array1[5] = array_mosse[8]
-    array4[3] = array_mosse[9]
-    array4[4] = array_mosse[10]
-    array4[5] = array_mosse[11]
-    array4[6] = array_mosse[12]
-    array4[7] = array_mosse[13]
-    array4[8] = array_mosse[14]
-    array4[9] = array_mosse[15]
-    array4[10] = array_mosse[16]
-    array4[11] = array_mosse[17]
-    array4[0] = array_mosse[18]
-    array4[1] = array_mosse[19]
-    array4[2] = array_mosse[20]
-    array_soluzioni.append("Ui")
+    array3[3] = movesArray[0]
+    array2[3] = movesArray[1]
+    array1[3] = movesArray[2]
+    array3[4] = movesArray[3]
+    array1[4] = movesArray[5]
+    array3[5] = movesArray[6]
+    array2[5] = movesArray[7]
+    array1[5] = movesArray[8]
+    array4[3] = movesArray[9]
+    array4[4] = movesArray[10]
+    array4[5] = movesArray[11]
+    array4[6] = movesArray[12]
+    array4[7] = movesArray[13]
+    array4[8] = movesArray[14]
+    array4[9] = movesArray[15]
+    array4[10] = movesArray[16]
+    array4[11] = movesArray[17]
+    array4[0] = movesArray[18]
+    array4[1] = movesArray[19]
+    array4[2] = movesArray[20]
+    solutionArray.append("Ui")
     return
 
 def down():
@@ -661,8 +660,8 @@ def down():
     global array7
     global array8
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -670,40 +669,40 @@ def down():
 
         if (i <= 11):
             counter_array = i
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i > 11 and i <= 14):
             counter_array = i - 9
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         elif (i > 14 and i <= 17):
             counter_array = i - 12
-            array_mosse[i] = array8[counter_array]
+            movesArray[i] = array8[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
 
         i = i + 1
 
-    array6[3] = array_mosse[0]
-    array6[4] = array_mosse[1]
-    array6[5] = array_mosse[2]
-    array6[6] = array_mosse[3]
-    array6[7] = array_mosse[4]
-    array6[8] = array_mosse[5]
-    array6[9] = array_mosse[6]
-    array6[10] = array_mosse[7]
-    array6[11] = array_mosse[8]
-    array6[0] = array_mosse[9]
-    array6[1] = array_mosse[10]
-    array6[2] = array_mosse[11]
-    array7[5] = array_mosse[12]
-    array8[5] = array_mosse[13]
-    array9[5] = array_mosse[14]
-    array7[4] = array_mosse[15]
-    array9[4] = array_mosse[17]
-    array7[3] = array_mosse[18]
-    array8[3] = array_mosse[19]
-    array9[3] = array_mosse[20]
-    array_soluzioni.append("D")
+    array6[3] = movesArray[0]
+    array6[4] = movesArray[1]
+    array6[5] = movesArray[2]
+    array6[6] = movesArray[3]
+    array6[7] = movesArray[4]
+    array6[8] = movesArray[5]
+    array6[9] = movesArray[6]
+    array6[10] = movesArray[7]
+    array6[11] = movesArray[8]
+    array6[0] = movesArray[9]
+    array6[1] = movesArray[10]
+    array6[2] = movesArray[11]
+    array7[5] = movesArray[12]
+    array8[5] = movesArray[13]
+    array9[5] = movesArray[14]
+    array7[4] = movesArray[15]
+    array9[4] = movesArray[17]
+    array7[3] = movesArray[18]
+    array8[3] = movesArray[19]
+    array9[3] = movesArray[20]
+    solutionArray.append("D")
     return
 
 def down_inv():
@@ -711,8 +710,8 @@ def down_inv():
     global array7
     global array8
     global array9
-    global array_mosse
-    global array_soluzioni
+    global movesArray
+    global solutionArray
 
     i = 0
 
@@ -720,40 +719,40 @@ def down_inv():
 
         if (i <= 11):
             counter_array = i
-            array_mosse[i] = array6[counter_array]
+            movesArray[i] = array6[counter_array]
         elif (i > 11 and i <= 14):
             counter_array = i - 9
-            array_mosse[i] = array7[counter_array]
+            movesArray[i] = array7[counter_array]
         elif (i > 14 and i <= 17):
             counter_array = i - 12
-            array_mosse[i] = array8[counter_array]
+            movesArray[i] = array8[counter_array]
         else:
             counter_array = i - 15
-            array_mosse[i] = array9[counter_array]
+            movesArray[i] = array9[counter_array]
 
         i = i + 1
 
-    array6[9] = array_mosse[0]
-    array6[10] = array_mosse[1]
-    array6[11] = array_mosse[2]
-    array6[0] = array_mosse[3]
-    array6[1] = array_mosse[4]
-    array6[2] = array_mosse[5]
-    array6[3] = array_mosse[6]
-    array6[4] = array_mosse[7]
-    array6[5] = array_mosse[8]
-    array6[6] = array_mosse[9]
-    array6[7] = array_mosse[10]
-    array6[8] = array_mosse[11]
-    array9[3] = array_mosse[12]
-    array8[3] = array_mosse[13]
-    array7[3] = array_mosse[14]
-    array9[4] = array_mosse[15]
-    array7[4] = array_mosse[17]
-    array9[5] = array_mosse[18]
-    array8[5] = array_mosse[19]
-    array7[5] = array_mosse[20]
-    array_soluzioni.append("Di")
+    array6[9] = movesArray[0]
+    array6[10] = movesArray[1]
+    array6[11] = movesArray[2]
+    array6[0] = movesArray[3]
+    array6[1] = movesArray[4]
+    array6[2] = movesArray[5]
+    array6[3] = movesArray[6]
+    array6[4] = movesArray[7]
+    array6[5] = movesArray[8]
+    array6[6] = movesArray[9]
+    array6[7] = movesArray[10]
+    array6[8] = movesArray[11]
+    array9[3] = movesArray[12]
+    array8[3] = movesArray[13]
+    array7[3] = movesArray[14]
+    array9[4] = movesArray[15]
+    array7[4] = movesArray[17]
+    array9[5] = movesArray[18]
+    array8[5] = movesArray[19]
+    array7[5] = movesArray[20]
+    solutionArray.append("Di")
     return
 
 #movimenti totali del cubo
@@ -768,7 +767,7 @@ def x(): #tutto da fixare
     global array8
     global array9
     global movimento_completo
-    global array_soluzioni
+    global solutionArray
 
     i = 0
 
@@ -855,7 +854,7 @@ def x(): #tutto da fixare
     array6[3] = movimento_completo[51]
     array6[4] = movimento_completo[52]
     array6[5] = movimento_completo[53]
-    array_soluzioni.append("X")
+    solutionArray.append("X")
     return
 
 def x_inv():
@@ -869,7 +868,7 @@ def x_inv():
     global array8
     global array9
     global movimento_completo
-    global array_soluzioni
+    global solutionArray
 
     i = 0
 
@@ -958,7 +957,7 @@ def x_inv():
     array4[11] = movimento_completo[51]
     array4[10] = movimento_completo[52]
     array4[9] = movimento_completo[53]
-    array_soluzioni.append("Xi")
+    solutionArray.append("Xi")
     return
 
 def y():
@@ -972,7 +971,7 @@ def y():
     global array8
     global array9
     global movimento_completo
-    global array_soluzioni
+    global solutionArray
 
     i = 0
 
@@ -1061,11 +1060,11 @@ def y():
     array9[5] = movimento_completo[51]
     array8[5] = movimento_completo[52]
     array7[5] = movimento_completo[53]
-    array_soluzioni.append("Y")
+    solutionArray.append("Y")
     return
 
 while_example = 0
-mossa = "F"
+move = "F"
 
 
 
@@ -3008,7 +3007,7 @@ elif array4[0] <= 19:
         elif array4[6] <= 19:
             caso=333
 #oll vero e proprio
-print(array_soluzioni)
+print(solutionArray)
 #L oll
 if eo == 2:
     if caso == 111:
@@ -5005,122 +5004,122 @@ elif array4[4] == 42:
     up()
 
 print_arrays()
-print(array_soluzioni)
+print(solutionArray)
 
-rp = len(array_soluzioni) - 10
-scambi = 1
-while scambi != 0:
+rp = len(solutionArray) - 10
+exchanges = 1
+while exchanges != 0:
     ss = 0
-    scambi = 0
+    exchanges = 0
     while ss < rp:
-        if array_soluzioni[ss] == array_soluzioni[ss+1] and array_soluzioni[ss] == array_soluzioni[ss+2]:
-            if array_soluzioni[ss] == 'F':
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
-                array_soluzioni[ss] = 'Fi'
+        if solutionArray[ss] == solutionArray[ss+1] and solutionArray[ss] == solutionArray[ss+2]:
+            if solutionArray[ss] == 'F':
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
+                solutionArray[ss] = 'Fi'
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'Fi':
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
-                array_soluzioni[ss] = 'F'
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'Fi':
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
+                solutionArray[ss] = 'F'
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'U':
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
-                array_soluzioni[ss] = 'Ui'
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'U':
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
+                solutionArray[ss] = 'Ui'
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'Ui':
-                array_soluzioni[ss] = 'U'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'Ui':
+                solutionArray[ss] = 'U'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp -2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'D':
-                array_soluzioni[ss] = 'Di'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'D':
+                solutionArray[ss] = 'Di'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'Di':
-                array_soluzioni[ss] = 'D'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'Di':
+                solutionArray[ss] = 'D'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'B':
-                array_soluzioni[ss] = 'Bi'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'B':
+                solutionArray[ss] = 'Bi'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'Bi':
-                array_soluzioni[ss] = 'B'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'Bi':
+                solutionArray[ss] = 'B'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'L':
-                array_soluzioni[ss] = 'Li'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'L':
+                solutionArray[ss] = 'Li'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'Li':
-                array_soluzioni[ss] = 'L'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'Li':
+                solutionArray[ss] = 'L'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'R':
-                array_soluzioni[ss] = 'Ri'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'R':
+                solutionArray[ss] = 'Ri'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-            elif array_soluzioni[ss] == 'Ri':
-                array_soluzioni[ss] = 'R'
-                del array_soluzioni[ss]
-                del array_soluzioni[ss + 1]
+                exchanges = exchanges + 1
+            elif solutionArray[ss] == 'Ri':
+                solutionArray[ss] = 'R'
+                del solutionArray[ss]
+                del solutionArray[ss + 1]
                 rp = rp - 2
-                scambi = scambi + 1
-        if (array_soluzioni[ss] == 'F' and array_soluzioni[ss + 1] == 'Fi') or (
-                array_soluzioni[ss] == 'Fi' and array_soluzioni[ss + 1] == 'F'):
-            del array_soluzioni[ss]
-            del array_soluzioni[ss]
+                exchanges = exchanges + 1
+        if (solutionArray[ss] == 'F' and solutionArray[ss + 1] == 'Fi') or (
+                solutionArray[ss] == 'Fi' and solutionArray[ss + 1] == 'F'):
+            del solutionArray[ss]
+            del solutionArray[ss]
             rp = rp - 2
-            scambi = scambi + 1
-        elif (array_soluzioni[ss] == 'R' and array_soluzioni[ss + 1] == 'Ri') or (
-                array_soluzioni[ss] == 'Ri' and array_soluzioni[ss + 1] == 'R'):
-            del array_soluzioni[ss]
-            del array_soluzioni[ss]
-            scambi = scambi + 1
+            exchanges = exchanges + 1
+        elif (solutionArray[ss] == 'R' and solutionArray[ss + 1] == 'Ri') or (
+                solutionArray[ss] == 'Ri' and solutionArray[ss + 1] == 'R'):
+            del solutionArray[ss]
+            del solutionArray[ss]
+            exchanges = exchanges + 1
             rp = rp - 2
-        elif (array_soluzioni[ss] == 'L' and array_soluzioni[ss + 1] == 'Li') or (
-                array_soluzioni[ss] == 'Li' and array_soluzioni[ss + 1] == 'L'):
-            del array_soluzioni[ss]
-            del array_soluzioni[ss]
-            scambi = scambi + 1
-        elif (array_soluzioni[ss] == 'B' and array_soluzioni[ss + 1] == 'Bi') or (
-                array_soluzioni[ss] == 'Bi' and array_soluzioni[ss + 1] == 'B'):
-            del array_soluzioni[ss]
-            del array_soluzioni[ss]
+        elif (solutionArray[ss] == 'L' and solutionArray[ss + 1] == 'Li') or (
+                solutionArray[ss] == 'Li' and solutionArray[ss + 1] == 'L'):
+            del solutionArray[ss]
+            del solutionArray[ss]
+            exchanges = exchanges + 1
+        elif (solutionArray[ss] == 'B' and solutionArray[ss + 1] == 'Bi') or (
+                solutionArray[ss] == 'Bi' and solutionArray[ss + 1] == 'B'):
+            del solutionArray[ss]
+            del solutionArray[ss]
             rp = rp - 2
-            scambi = scambi + 1
-        elif (array_soluzioni[ss] == 'U' and array_soluzioni[ss + 1] == 'Ui') or (
-                array_soluzioni[ss] == 'Ui' and array_soluzioni[ss + 1] == 'U'):
-            del array_soluzioni[ss]
-            del array_soluzioni[ss]
+            exchanges = exchanges + 1
+        elif (solutionArray[ss] == 'U' and solutionArray[ss + 1] == 'Ui') or (
+                solutionArray[ss] == 'Ui' and solutionArray[ss + 1] == 'U'):
+            del solutionArray[ss]
+            del solutionArray[ss]
             rp = rp - 2
-            scambi = scambi + 1
+            exchanges = exchanges + 1
             print(ss)
-        elif (array_soluzioni[ss] == 'D' and array_soluzioni[ss + 1] == 'Di') or (
-                array_soluzioni[ss] == 'Di' and array_soluzioni[ss + 1] == 'D'):
-            del array_soluzioni[ss]
-            del array_soluzioni[ss]
+        elif (solutionArray[ss] == 'D' and solutionArray[ss + 1] == 'Di') or (
+                solutionArray[ss] == 'Di' and solutionArray[ss + 1] == 'D'):
+            del solutionArray[ss]
+            del solutionArray[ss]
             rp = rp - 2
-            scambi = scambi + 1
+            exchanges = exchanges + 1
         ss = ss + 1
-print(array_soluzioni)
+print(solutionArray)
