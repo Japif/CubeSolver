@@ -23,21 +23,7 @@ char mossa;
 int inv = 0, passiU, passiL, passiB, passiR, passiF, passiD,
     esci = 0, totale = 0, rotX = 0, rotY = 0, rotZ = 0;
 
-void faiStep(int passi, int mot[]) {
-  if (passi < 0) {
-    passi = 0 - passi;
-    digitalWrite(mot[0], LOW);
-  }
-  else {
-    digitalWrite(mot[0], HIGH);
-  }
-  for (int i = 0; i < passi; i++) {
-    digitalWrite(mot[1], HIGH);
-    delayMicroseconds(ics);
-    digitalWrite(mot[1], LOW);
-    delayMicroseconds(ics);
-  }
-}
+void faiStep(int, int []);
 
 void setup() {
   Serial.begin(19200);
@@ -289,4 +275,20 @@ void loop() {
   }
   Serial.print("FINEH");
   exit(0);
+}
+
+void faiStep(int passi, int mot[]) {
+  if (passi < 0) {
+    passi = 0 - passi;
+    digitalWrite(mot[0], LOW);
+  }
+  else {
+    digitalWrite(mot[0], HIGH);
+  }
+  for (int i = 0; i < passi; i++) {
+    digitalWrite(mot[1], HIGH);
+    delayMicroseconds(ics);
+    digitalWrite(mot[1], LOW);
+    delayMicroseconds(ics);
+  }
 }
