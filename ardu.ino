@@ -285,16 +285,10 @@ void faiStep(int passi, int mot[]) {
   else {
     digitalWrite(mot[0], HIGH);
   }
-  if(mot[1]==10||mot[1]==12){
-    analogWrite(mot[1], 255);
-  }
   for (int i = 0; i < passi; i++) {
     digitalWrite(mot[1], HIGH);
     delayMicroseconds(ics);
     digitalWrite(mot[1], LOW);
     delayMicroseconds(ics);
-  }
-  if(mot[1]==10||mot[1]==12){
-    analogWrite(mot[1], 0);
   }
 }
