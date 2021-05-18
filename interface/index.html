@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rubics</title>
+</head>
+<body>
+    <div class="row">
+        <div class="separator"></div>
+        <div class="cubes-container">
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="utl"></div>
+                <div class="cube w" color="w" id="ut"></div>
+                <div class="cube w" color="w" id="utr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="uml"></div>
+                <div class="cube w center" color="w" name="15"></div>
+                <div class="cube w" color="w" id="umr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="ubl"></div>
+                <div class="cube w" color="w" id="ub"></div>
+                <div class="cube w" color="w" id="ubr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cubes-container">
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="ltl"></div>
+                <div class="cube w" color="w" id="lt"></div>
+                <div class="cube w" color="w" id="ltr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="lml"></div>
+                <div class="cube r center" color="r" name="45"></div>
+                <div class="cube w" color="w" id="lmr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="lbl"></div>
+                <div class="cube w" color="w" id="lb"></div>
+                <div class="cube w" color="w" id="lbr"></div>
+            </div>
+        </div>
+        <div class="cubes-container">
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="ftl"></div>
+                <div class="cube w" color="w" id="ft"></div>
+                <div class="cube w" color="w" id="ftr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="fml"></div>
+                <div class="cube b center" color="b" name="25"></div>
+                <div class="cube w" color="w" id="fmr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="fbl"></div>
+                <div class="cube w" color="w" id="fb"></div>
+                <div class="cube w" color="w" id="fbr"></div>
+            </div>
+        </div>
+        <div class="cubes-container">
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="rtl"></div>
+                <div class="cube w" color="w" id="rt"></div>
+                <div class="cube w" color="w" id="rtr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="rml"></div>
+                <div class="cube o center" color="o" name="55"></div>
+                <div class="cube w" color="w" id="rmr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="rbl"></div>
+                <div class="cube w" color="w" id="rb"></div>
+                <div class="cube w" color="w" id="rbr"></div>
+            </div>
+        </div>
+        <div class="cubes-container">
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="btl"></div>
+                <div class="cube w" color="w" id="bt"></div>
+                <div class="cube w" color="w" id="btr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="bml"></div>
+                <div class="cube g center" color="g" name="65"></div>
+                <div class="cube w" color="w" id="bmr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="bbl"></div>
+                <div class="cube w" color="w" id="bb"></div>
+                <div class="cube w" color="w" id="bbr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="separator"></div>
+        <div class="cubes-container">
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="dtl"></div>
+                <div class="cube w" color="w" id="dt"></div>
+                <div class="cube w" color="w" id="dtr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="dml"></div>
+                <div class="cube y center" color="y" name="35"></div>
+                <div class="cube w" color="w" id="dmr"></div>
+            </div>
+            <div class="cubes-row">
+                <div class="cube w" color="w" id="dbl"></div>
+                <div class="cube w" color="w" id="db"></div>
+                <div class="cube w" color="w" id="dbr"></div>
+            </div>
+        </div>
+    </div>
+    <select id="colors" id="colors">
+        <option value="w">white</option>
+        <option value="r">red</option>
+        <option value="b">blue</option>
+        <option value="y">yellow</option>
+        <option value="o">orange</option>
+        <option value="g">green</option>
+    </select>
+    <button id="button">INVIA</button>
+    <button id="gather">GATHER</button>
+    <script src="script.js"></script>
+</body>
+</html>
