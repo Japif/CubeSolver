@@ -6,6 +6,10 @@ Nothing yet!
 
 ## Arduino
 
+### [3.0.0] - 2021-05-18
+#### Fixed
+* Complete rehaul of the code.
+
 ### [2.0.1] - 2020-11-11
 #### Fixed
 * Wrong pins in the function.
@@ -24,6 +28,10 @@ Nothing yet!
 Base version.
 
 ## Python
+
+### [1.1.0]
+#### Fixed
+* Various bugs.
 
 ### [1.0.1]
 #### Fixed
