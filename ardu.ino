@@ -1,3 +1,4 @@
+
 void setup() {
   Serial.begin(2400);
   pinMode(13, OUTPUT);
@@ -43,12 +44,25 @@ void loop() {
       delay(10);
     }
    */
-  finalString = "UUiXXXUUio";
+  finalString = "LiFiBBRLBULiULRUiRiYBiUBUiRURiYRURiUURUiRiURUiRiYUiFiUUFUUFiUFYFiUiLiULFRiUiRiFRFiUURUiRiFiUiFRURiFRiFiRUiRUio";
   Serial.println(finalString);
   finalString.toCharArray(moveArray, 200);
   Serial.println(arrayCounter);
+  digitalWrite(13, LOW);
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  delay(5000);
   digitalWrite(A0, HIGH);
-  delay(500);
+  delay(5000);
   for (i=0; i<198; i++){
       Serial.println(moveArray[i]);
       switch (moveArray[i]) {
@@ -148,11 +162,11 @@ void loop() {
 void doMove(int pinNum){
   for(k=0;k<50;k++){
       digitalWrite(pinNum, HIGH);
-      delayMicroseconds(800);
+      delayMicroseconds(1000);
       digitalWrite(pinNum, LOW);
-      delayMicroseconds(800);
+      delayMicroseconds(1000);
   }
-  delay(100);
+  delay(150);
 }
 int typeMove(char next){
     if(next == 'i'){
